@@ -1,0 +1,12 @@
+void main(){
+    sout("Main Thread")
+    Thread someBackgroundWaiting = new Thread(logic)
+    someBackgroundWaiting.start()
+    sout("Back To Main I will not wait for those 10 seconds")
+}
+logic(){
+  #wait  waitfor10seconds 
+    sout
+}
+
+
